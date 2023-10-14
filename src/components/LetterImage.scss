@@ -5,8 +5,9 @@ letter-image
 -------------------------------- */
 
 .letter-image-container {
-  position: relative;
   height: 100%;
+  left: 50%;
+  background: none !important;
 
   .button-container {
     position: absolute;

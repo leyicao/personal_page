@@ -21,12 +21,12 @@ const HomePageView = () => {
     <Box className='home-view-container'>
       <Grid container >
         <Grid item md={12} lg={5}>
-          <h1 class="cd-headline rotate-1">
+          <h1 className="cd-headline rotate-1">
             <div>{PageContent.Home_Page_Header}</div>
-            <div class="cd-words-wrapper">
+            <div className="cd-words-wrapper">
               {
                 boldContent.map((text, index) =>
-                  <b class={currentIdx === index ? "is-visible" : "is-hidden"}>
+                  <b className={currentIdx === index ? "is-visible" : "is-hidden"}>
                     {text}
                   </b>)
               }
@@ -40,9 +40,6 @@ const HomePageView = () => {
         <Grid item md={12} lg={7}>
           <LetterImage />
         </Grid>
-
-        {/* <Button variant="contained">Download CV</Button> */}
-
       </Grid>
     </Box >
   )
