@@ -1,5 +1,5 @@
 .sidebar {
-  background: #09101A;
+  background: white;
   height: 100%;
   font-family: sans-serif;
 
@@ -15,7 +15,7 @@
     border-radius: 5px;
 
     .nav-item-icon-container {
-      background: #454d58;
+      background: #ea3c12;
       border-radius: 5px;
       width: 45px;
       height: 45px;
@@ -31,7 +31,7 @@
     }
 
     .nav-item-icon-container svg {
-      fill: whitesmoke;
+      fill: white;
       height: 45px;
       width: 45px;
       vertical-align: -webkit-baseline-middle;
@@ -39,10 +39,10 @@
     }
 
     .menu-text-container {
-      height: 24px;
+      height: 20px;
       overflow: hidden;
       align-self: center;
-      color: whitesmoke;
+      color: #ea3c12;
       align-self: center;
       font-size: 18px;
       text-transform: uppercase;
@@ -60,7 +60,7 @@
     }
 
     &:hover .nav-item-icon-container {
-      background: #55e6a5;
+      background: white;
 
       svg {
         fill: black;
@@ -68,15 +68,15 @@
     }
 
     &:hover .origin-text {
-      transform: translateY(-24px);
+      transform: translateY(-20px);
       transition: -webkit-transform 0.4s;
       transition: transform 0.4s;
       transition: transform 0.4s, -webkit-transform 0.4s;
     }
 
     &:hover #animation-character {
-      color: #55e6a5;
-      transform: translateY(-24px);
+      color: #151c25;
+      transform: translateY(-20px);
       transition: -webkit-transform 0.4s;
       transition: transform 0.4s;
       transition: transform 0.4s, -webkit-transform 0.4s;

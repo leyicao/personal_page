@@ -11,6 +11,7 @@ import ImportContactsIcon from '@mui/icons-material/ImportContacts';
 import PermContactCalendarIcon from '@mui/icons-material/PermContactCalendar';
 
 import './Sidebar.scss'
+import logo from '../assets/logo-color.png'
 
 const drawerWidth = 300;
 const SideBarItems = [{
@@ -40,8 +41,7 @@ const Sidebar = (props) => {
 
   const drawer = (
     <div className='sidebar'>
-      <div className='logo'></div>
-      <Divider />
+      <img src={logo} alt="logo" style={{ width: '100%' }} />
       {SideBarItems.map(({ text, Icon }) => (
         <a>
           <div className='nav-item-container'>
