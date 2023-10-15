@@ -1,0 +1,28 @@
+.tab-container {
+  text-align-last: center;
+  height: 45px;
+
+  .tab {
+    text-transform: uppercase;
+    color: #ea3c12;
+    z-index: 2;
+    font-weight: 500;
+    font-size: 18px;
+    border-bottom: 2px;
+    border-radius: 0;
+
+    &:hover {
+      border-bottom: 2px solid #ea3c12;
+      background: none;
+    }
+  }
+}
+
+
+
+.tab-card {
+  border: 2px dashed red;
+  margin: 30px;
+  height: 220px;
+  padding: 30px;
+}
