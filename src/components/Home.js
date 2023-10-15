@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import Box from '@mui/material/Box';
-// import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 
 import PageContent from './PageContent.json';
@@ -32,9 +31,9 @@ const HomePageView = () => {
               }
             </div>
           </h1>
-          <h3>
+          <h4>
             {PageContent.Home_Page_Content_1}
-          </h3>
+          </h4>
         </Grid>
 
         <Grid item md={12} lg={7}>

@@ -8,11 +8,18 @@ letter-image
   height: 100%;
   left: 50%;
   background: none !important;
+  position: relative;
 
   .button-container {
     position: absolute;
     top: 370px;
     left: 28%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .letter-image-container {
+    top: 150px;
   }
 }
 
@@ -49,11 +56,11 @@ letter-image
 
   .top-fold {
     position: absolute;
-    top: 75px;
+    top: 77px;
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 75px 150px 0 150px;
+    border-width: 77px 150px 0 150px;
     -webkit-transform-origin: 50% 0%;
     -webkit-transition: transform .4s .4s, z-index .2s .4s;
     -moz-transform-origin: 50% 0%;
