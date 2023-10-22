@@ -17,7 +17,7 @@ const HomePageView = () => {
     return () => clearTimeout(timer)
   }, [currentIdx])
   return (
-    <Box className='home-view-container'>
+    <Box className='home-view-container' id="Home">
       <Grid container >
         <Grid item md={12} lg={5}>
           <h1 className="cd-headline rotate-1">

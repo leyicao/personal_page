@@ -34,7 +34,7 @@ const AboutMePageView = () => {
   };
 
   return (
-    <Grid>
+    <Grid id="AboutMe">
       <div className='tab-container'>
         {
           TabItems.map((item) =>

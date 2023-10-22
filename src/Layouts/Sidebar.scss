@@ -87,6 +87,33 @@
   }
 }
 
+a.active {
+  .nav-item-container {
+    .nav-item-icon-container {
+      background: white;
+
+      svg {
+        fill: black;
+      }
+    }
+
+    .origin-text {
+      transform: translateY(-20px);
+      transition: -webkit-transform 0.4s;
+      transition: transform 0.4s;
+      transition: transform 0.4s, -webkit-transform 0.4s;
+    }
+
+    #animation-character {
+      color: #151c25;
+      transform: translateY(-20px);
+      transition: -webkit-transform 0.4s;
+      transition: transform 0.4s;
+      transition: transform 0.4s, -webkit-transform 0.4s;
+    }
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .sidebar {
     display: none;
