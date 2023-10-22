@@ -8,12 +8,13 @@ const TabItems = [
   { tabName: 'Education', header: 'Education', subHeader: '14124 dasd 23', body: '1das d das das das d23' },
 ]
 
-const AboutMePageView = () => {
+const AboutMeView = () => {
   return (
     <PageContainer >
       <Grid className="about-me-section" id="AboutMe">
         <h2 className='section-header' >About Me</h2>
-        <h1 className='header'>Education</h1>
+        <h1 className='header'>Education <p className='downline' /></h1>
+
         {TabItems.map((item) =>
           <div>
             <Grid container>
@@ -64,4 +65,4 @@ const AboutMePageView = () => {
   );
 }
 
-export default AboutMePageView
+export default AboutMeView

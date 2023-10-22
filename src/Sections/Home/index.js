@@ -10,7 +10,7 @@ import LetterImage from './LetterImage';
 
 const boldContent = ['', 'Developer', 'Team Player', 'Fast Learner']
 
-const HomePageView = () => {
+const HomeView = () => {
   const [currentIdx, setCurrentIdx] = useState(3);
 
   useEffect(() => {
@@ -53,4 +53,4 @@ const HomePageView = () => {
   )
 }
 
-export default HomePageView
+export default HomeView

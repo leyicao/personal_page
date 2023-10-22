@@ -1,0 +1,49 @@
+.about-me-section {
+  position: relative;
+
+  h2.section-header {
+    opacity: 0.1;
+    position: absolute;
+    font-size: 8rem;
+    left: 25%;
+    top: -23%;
+    text-transform: uppercase;
+    color: lightcoral;
+  }
+
+  h1.header {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+
+  .downline {
+    width: 95px;
+    border-bottom: 6px solid #ea3c12;
+    margin: 10px auto;
+  }
+
+  .tab-card {
+    border: 2px dashed #ea3c12;
+    margin: 30px;
+    height: 220px;
+    padding: 30px;
+  }
+
+  @media only screen and (max-width: 1328px) {
+    h2.section-header {
+      font-size: 6rem;
+      left: 23%;
+      top: -116px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    h2.section-header {
+      font-size: 4rem;
+      left: 18%;
+      top: -80px;
+    }
+  }
+}
