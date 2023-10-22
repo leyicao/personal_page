@@ -19,7 +19,7 @@ const HomePageView = () => {
   return (
     <Box className='home-view-container' id="Home">
       <Grid container >
-        <Grid item md={12} lg={5}>
+        <Grid item md={12} lg={6}>
           <h1 className="cd-headline rotate-1">
             <div>{PageContent.Home_Page_Header}</div>
             <div className="cd-words-wrapper">
@@ -36,7 +36,7 @@ const HomePageView = () => {
           </h4>
         </Grid>
 
-        <Grid item md={12} lg={7}>
+        <Grid item md={12} lg={6} style={{ margin: 'auto' }}>
           <LetterImage />
         </Grid>
       </Grid>

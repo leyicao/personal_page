@@ -5,28 +5,23 @@ letter-image
 -------------------------------- */
 
 .letter-image-container {
-  height: 100%;
-  left: 50%;
+  width: 500px;
+  height: 450px;
+  position: sticky !important;
+  left: 20%;
   background: none !important;
-  position: relative;
 
   .button-container {
     position: absolute;
     top: 370px;
-    left: 28%;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .letter-image-container {
-    top: 150px;
+    left: 25%;
   }
 }
 
 .letter-image {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 48%;
   width: 300px;
   height: 300px;
   -webkit-transform: translate(-50%, -50%);
@@ -146,7 +141,7 @@ letter-image
   position: absolute;
   top: 300px;
   left: 50%;
-  width: 600px;
+  width: 500px;
   height: 45px;
   transition: .4s;
   transform: translateX(-50%);
@@ -159,7 +154,7 @@ letter-image
   background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0));
 }
 
-.letter-image:hover {
+.letter-image-container:hover {
   .animated-mail {
     transform: translateY(75px);
     -webkit-transform: translateY(75px);
@@ -181,6 +176,18 @@ letter-image
   }
 
   .shadow {
-    width: 375px;
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 1348px) {
+  .letter-image-container {
+    top: 50px;
+    margin: auto;
+    left: 45%;
+  }
+
+  .letter-image {
+    top: 30%;
   }
 }

@@ -1,0 +1,11 @@
+.pageContainer {
+  min-height: 100vh;
+  width: 100%;
+  margin-left: 300px;
+}
+
+@media only screen and (max-width: 768px) {
+  .pageContainer {
+    margin-left: 0;
+  }
+}
