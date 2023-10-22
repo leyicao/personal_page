@@ -1,24 +1,28 @@
-#AboutMe {
-  min-height: 100vh;
-}
-
 .tab-container {
   text-align-last: center;
   height: 45px;
+  margin-bottom: 50px;
 
   .tab {
     text-transform: uppercase;
-    color: #ea3c12;
+    color: black;
     z-index: 2;
-    font-weight: 500;
-    font-size: 18px;
-    border-bottom: 2px;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
     border-radius: 0;
 
     &:hover {
-      border-bottom: 2px solid #ea3c12;
+      color: #ea3c12;
       background: none;
     }
+  }
+
+  .active {
+    color: #ea3c12;
+    border-bottom: 4px solid #ea3c12;
+    background: none;
+    margin-bottom: -4px;
   }
 }
 
