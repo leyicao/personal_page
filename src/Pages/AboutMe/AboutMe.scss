@@ -1,34 +1,27 @@
-.tab-container {
-  text-align-last: center;
-  height: 45px;
-  margin-bottom: 50px;
+.about-me-section {
+  position: relative;
 
-  .tab {
+  h2.section-header {
+    opacity: 0.1;
+    position: absolute;
+    font-size: 8rem;
+    left: 15%;
+    top: -23%;
     text-transform: uppercase;
-    color: black;
-    z-index: 2;
-    font-weight: 900;
-    font-size: 20px;
-    line-height: 24px;
-    border-radius: 0;
+    color: lightcoral;
 
-    &:hover {
-      color: #ea3c12;
-      background: none;
-    }
   }
 
-  .active {
-    color: #ea3c12;
-    border-bottom: 4px solid #ea3c12;
-    background: none;
-    margin-bottom: -4px;
+  h1.header {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
   }
-}
 
-.tab-card {
-  border: 2px dashed red;
-  margin: 30px;
-  height: 220px;
-  padding: 30px;
+  .tab-card {
+    border: 2px dashed red;
+    margin: 30px;
+    height: 220px;
+    padding: 30px;
+  }
 }
