@@ -6,7 +6,7 @@ import PageContent from './PageContent.json';
 import './Home.scss';
 import LetterImage from './LetterImage';
 
-const boldContent = ['', 'Software Engineer', 'Team Player', 'Fast Learner']
+const boldContent = ['', 'Developer', 'Team Player', 'Fast Learner']
 
 const HomePageView = () => {
   const [currentIdx, setCurrentIdx] = useState(1);
