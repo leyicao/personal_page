@@ -1,0 +1,28 @@
+.scroll-button-container {
+  transition: .2s;
+  position: fixed;
+  bottom: 2rem;
+  right: 1.8rem;
+
+  .scroll-button {
+    padding: 12px;
+    background: black;
+    ;
+    cursor: pointer;
+    vertical-align: bottom;
+    transition: ease-in .2s;
+    transform: ease-in .2s;
+    border-radius: 50%;
+
+    svg {
+      fill: white;
+      width: 1.7rem;
+      height: 1.7rem;
+    }
+  }
+
+  .scroll-button:hover {
+    background: #ea3c12;
+    ;
+  }
+}
