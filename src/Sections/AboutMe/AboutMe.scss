@@ -1,12 +1,13 @@
 .about-me-section {
   position: relative;
+  padding: 10% 3vw 0 3vw;
 
   h2.section-header {
     opacity: 0.1;
     position: absolute;
     font-size: 8rem;
     left: 25%;
-    top: -23%;
+    top: 0;
     text-transform: uppercase;
     color: lightcoral;
   }
@@ -31,19 +32,16 @@
     padding: 30px;
   }
 
-  @media only screen and (max-width: 1328px) {
+  @media only screen and (max-width: 1500px) {
     h2.section-header {
-      font-size: 6rem;
-      left: 23%;
-      top: -116px;
+      font-size: 8vw;
+      left: 22%;
     }
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 800px) {
     h2.section-header {
-      font-size: 4rem;
-      left: 18%;
-      top: -80px;
+      display: none;
     }
   }
 }
