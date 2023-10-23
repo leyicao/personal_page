@@ -1,16 +1,19 @@
 import './App.scss';
 import Sidebar from './layouts/Sidebar';
 import ScrollButton from './layouts/ScrollButton';
-import HomePageView from './Sections/Home';
-import AboutMePageView from './Sections/AboutMe'
+import HomeView from './Sections/Home';
+import AboutMeView from './Sections/AboutMe';
+import SkillsView from './Sections/Skills';
+
 
 function App() {
   return (
     <div className="app">
       <Sidebar />
       <div>
-        <HomePageView />
-        <AboutMePageView />
+        <HomeView />
+        <AboutMeView />
+        <SkillsView />
       </div>
       <ScrollButton />
     </div>
