@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Grid from "@mui/material/Grid";
 import PageContainer from "../../Layouts/PageContainer";
+import useVisible from "../../hooks/isVisible";
+
 import { SkillBar } from "./SkillBar";
 
 import "./Skills.scss";
 
-const skillContent = [
-  { skillName: "Javascript", percentage: 75 },
+const skillsContent = [
+  { skillName: "Javascript", percentage: 10 },
   { skillName: "Python", percentage: 95 },
   { skillName: "ReactJS", percentage: 80 },
   { skillName: "MongoDB", percentage: 65 },
@@ -19,14 +21,27 @@ const skillContent = [
 ];
 
 const SkillsView = () => {
+  const elemRef = useRef();
+  const isVisible = useVisible(elemRef);
+
+  const [skills, setSkills] = useState(
+    skillsContent.map(({ skillName }) => ({ skillName, percentage: 0 }))
+  );
+
+  useEffect(() => {
+    if (isVisible) {
+      setTimeout(() => setSkills(skillsContent), 500);
+    }
+  }, [isVisible]);
+
   return (
     <PageContainer>
-      <Grid className="skills-section" id="Skills">
+      <Grid ref={elemRef} className="skills-section" id="Skills">
         <h1 className="header">
           Skills <p className="downline" />
         </h1>
         <Grid container>
-          {skillContent.map((skill) => (
+          {skills.map((skill) => (
             <Grid item lg={6} xs={12}>
               <SkillBar {...skill} />
             </Grid>
