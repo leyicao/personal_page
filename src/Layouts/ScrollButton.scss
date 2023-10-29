@@ -1,5 +1,5 @@
 .scroll-button-container {
-  transition: .2s;
+  transition: 0.2s;
   position: fixed;
   bottom: 2rem;
   right: 1.8rem;
@@ -7,11 +7,10 @@
   .scroll-button {
     padding: 12px;
     background: black;
-    ;
     cursor: pointer;
     vertical-align: bottom;
-    transition: ease-in .2s;
-    transform: ease-in .2s;
+    transition: ease-in 0.2s;
+    transform: ease-in 0.2s;
     border-radius: 50%;
 
     svg {
