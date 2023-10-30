@@ -14,7 +14,7 @@ const LetterImage = () => {
     document.body.removeChild(link);
   };
   return (
-    <Button className="letter-image-container" onClick={handleImageOnClick}>
+    <div className="letter-image-container" onClick={handleImageOnClick}>
       <div className="letter-image">
         <div className="animated-mail">
           <div className="back-fold"></div>
@@ -35,7 +35,7 @@ const LetterImage = () => {
           <Button variant="contained">Download CV</Button>
         </div>
       </div>
-    </Button>
+    </div>
   );
 };
 

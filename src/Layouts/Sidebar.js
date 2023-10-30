@@ -42,7 +42,7 @@ const Sidebar = () => (
   <div className="sidebar">
     <img src={logo} alt="logo" style={{ width: "100%" }} />
     {SideBarItems.map(({ text, Icon, id }) => (
-      <Link activeClass="active" isDynamic smooth spy to={id}>
+      <Link key={id} activeClass="active" isDynamic smooth spy to={id}>
         <div className="nav-item-container">
           <div className="nav-item-icon-container">
             <Icon className="nav-item-icon" />
@@ -52,6 +52,7 @@ const Sidebar = () => (
               <div style={{ display: "flex" }}>
                 {text.split("").map((character, index) => (
                   <div
+                    key={`animated-up-${index}`}
                     id="animation-character"
                     style={{
                       transitionDelay: `${index * 50}ms`,
@@ -65,6 +66,7 @@ const Sidebar = () => (
               <div style={{ display: "flex" }}>
                 {text.split("").map((character, index) => (
                   <div
+                    key={`animated-down-${index}`}
                     id="animation-character"
                     style={{
                       transitionDelay: `${index * 50}ms`,

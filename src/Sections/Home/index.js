@@ -29,6 +29,7 @@ const HomeView = () => {
               <div className="cd-words-wrapper">
                 {boldContent.map((text, index) => (
                   <b
+                    key={text}
                     className={classNames({
                       "is-visible": currentIdx === index,
                       "is-hidden": currentIdx !== index,

@@ -13,7 +13,7 @@ export const SkillBar = ({ skillName, percentage, waitTime }) => {
     if (isVisible) {
       setTimeout(() => setSkillPercentage(percentage), waitTime);
     }
-  }, [isVisible]);
+  }, [isVisible, setSkillPercentage, percentage, waitTime]);
 
   return (
     <div className="skill-bar" ref={elemRef}>

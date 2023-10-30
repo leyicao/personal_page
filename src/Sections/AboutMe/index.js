@@ -20,11 +20,11 @@ const AboutMeView = () => {
         <h1 className="header">
           Education
           <p className="downline" />
-          <h2 className="section-header">About Me</h2>
         </h1>
+        <h2 className="section-header">About Me</h2>
 
         {TabItems.map((item) => (
-          <div>
+          <div key={item.tabName}>
             <Grid container>
               <Grid item lg={6} xs={12}>
                 <div className="tab-card">

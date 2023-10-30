@@ -11,12 +11,12 @@ const skillsContent = [
   { skillName: "Python", percentage: 95 },
   { skillName: "ReactJS", percentage: 80 },
   { skillName: "MongoDB", percentage: 65 },
-  { skillName: "Javascript", percentage: 95 },
-  { skillName: "Javascript", percentage: 95 },
-  { skillName: "Javascript", percentage: 95 },
-  { skillName: "Javascript", percentage: 95 },
-  { skillName: "Javascript", percentage: 95 },
-  { skillName: "Javascript", percentage: 95 },
+  { skillName: "Javascript1", percentage: 95 },
+  { skillName: "Javascript2", percentage: 95 },
+  { skillName: "Javascript3", percentage: 95 },
+  { skillName: "Javascript4", percentage: 95 },
+  { skillName: "Javascript5", percentage: 95 },
+  { skillName: "Javascript6", percentage: 95 },
 ];
 
 const SkillsView = () => {
@@ -28,7 +28,7 @@ const SkillsView = () => {
         </h1>
         <Grid container>
           {skillsContent.map((skill, index) => (
-            <Grid item lg={6} xs={12}>
+            <Grid key={skill.skillName} item lg={6} xs={12}>
               <SkillBar {...skill} waitTime={index * 150} />
             </Grid>
           ))}
