@@ -1,13 +1,18 @@
 # LIVE DEMO
+
 https://leyicao.github.io/personal_page/
 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Local Setup
 
-In the project directory, you can run:
+1. `npm install` install all dependencies.
+2. `npm start` to start the project locally.
+3. `npm run deploy` to deploy the change in [Live Demo Page](https://leyicao.github.io/personal_page/)
+
+## Available Scripts
 
 ### `npm start`
 
