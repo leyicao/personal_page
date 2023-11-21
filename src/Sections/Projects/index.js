@@ -12,24 +12,28 @@ import "./Projects.scss";
 import ProjectCard from "./ProjectCard";
 
 const ProjectsContent = [
-  { name: "Project 1", imageSrc: projectImg1 },
-  { name: "Project 2", imageSrc: projectImg2 },
-  { name: "Project 3", imageSrc: projectImg3 },
-  { name: "Project 4", imageSrc: projectImg4 },
+  { projectName: "Project 1", imageSrc: projectImg1 },
+  { projectName: "Project 2", imageSrc: projectImg2 },
+  { projectName: "Project 3", imageSrc: projectImg3 },
+  { projectName: "Project 4", imageSrc: projectImg4 },
 ];
 
 const ProjectsView = () => {
   return (
     <PageContainer>
-      <Grid className="project-section" id="Projects">
-        <h1 className="header">
+      <Grid className="project-section">
+        <h1 className="header" id="Projects">
           My Works
           <p className="downline" />
         </h1>
 
         <div className="projects-container">
-          {ProjectsContent.map(({ name, imageSrc }) => (
-            <ProjectCard key={name} name={name} imageSrc={imageSrc} />
+          {ProjectsContent.map(({ projectName, imageSrc }) => (
+            <ProjectCard
+              key={projectName}
+              projectName={projectName}
+              imageSrc={imageSrc}
+            />
           ))}
         </div>
       </Grid>

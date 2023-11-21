@@ -2,7 +2,7 @@ import React from "react";
 import Button from "@mui/material/Button";
 import ProjectModal from "./ProjectModal";
 
-const ProjectCard = ({ name, imageSrc }) => {
+const ProjectCard = ({ projectName, imageSrc }) => {
   const [open, setOpen] = React.useState(false);
 
   const handleOpen = () => setOpen(true);
@@ -11,9 +11,9 @@ const ProjectCard = ({ name, imageSrc }) => {
   return (
     <div className="project-card">
       <div className="image-card">
-        <img id="project-img" src={imageSrc} alt={name} />
+        <img id="project-img" src={imageSrc} alt={projectName} />
         <div className="learn-more">
-          <h1>{name}</h1>
+          <h1>{projectName}</h1>
           <div style={{ display: "grid" }}>
             <Button variant="contained" onClick={handleOpen}>
               Learn More
@@ -25,7 +25,7 @@ const ProjectCard = ({ name, imageSrc }) => {
         open={open}
         onClose={handleClose}
         imageSrc={imageSrc}
-        name={name}
+        projectName={projectName}
       />
     </div>
   );
