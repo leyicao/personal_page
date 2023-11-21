@@ -7,9 +7,27 @@ import "./AboutMe.scss";
 const TabItems = [
   {
     tabName: "Education",
-    header: "Education",
-    subHeader: "14124 dasd 23",
-    body: "1das d das das das d23",
+    header: "University of Pennsylvania",
+    subHeader: "Master",
+    body: "Computer and Information Technology",
+  },
+  {
+    tabName: "Education",
+    header: "University of California, Santa Cruz",
+    subHeader: "Master",
+    body: "Applied Economic and Finance",
+  },
+  {
+    tabName: "Education",
+    header: "Guangdong University of Foreign Studies",
+    subHeader: "Bachelor",
+    body: "Management, Marketing",
+  },
+  {
+    tabName: "Education",
+    header: "Guangdong University of Foreign Studies",
+    subHeader: "Bachelor",
+    body: "Art, Business English",
   },
 ];
 
@@ -23,43 +41,19 @@ const AboutMeView = () => {
         </h1>
         <h2 className="section-header">About Me</h2>
 
-        {TabItems.map((item) => (
-          <div key={item.tabName}>
+          <div>
             <Grid container>
-              <Grid item lg={6} xs={12}>
+            {TabItems.map((item) => (
+              <Grid item lg={6} xs={12} key={item.header}>
                 <div className="tab-card">
                   <h3>{item.subHeader}</h3>
                   <h1>{item.header}</h1>
                   <div>{item.body}</div>
                 </div>
               </Grid>
-
-              <Grid item lg={6} xs={12}>
-                <div className="tab-card">
-                  <h3>{item.subHeader}</h3>
-                  <h1>{item.header}</h1>
-                  <div>{item.body}</div>
-                </div>
-              </Grid>
-
-              <Grid item lg={6} xs={12}>
-                <div className="tab-card">
-                  <h3>{item.subHeader}</h3>
-                  <h1>{item.header}</h1>
-                  <div>{item.body}</div>
-                </div>
-              </Grid>
-
-              <Grid item lg={6} xs={12}>
-                <div className="tab-card">
-                  <h3>{item.subHeader}</h3>
-                  <h1>{item.header}</h1>
-                  <div>{item.body}</div>
-                </div>
-              </Grid>
+            ))}
             </Grid>
           </div>
-        ))}
       </Grid>
     </PageContainer>
   );

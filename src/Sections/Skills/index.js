@@ -7,16 +7,16 @@ import { SkillBar } from "./SkillBar";
 import "./Skills.scss";
 
 const skillsContent = [
-  { skillName: "Javascript", percentage: 10 },
   { skillName: "Python", percentage: 95 },
-  { skillName: "ReactJS", percentage: 80 },
-  { skillName: "MongoDB", percentage: 65 },
-  { skillName: "Javascript1", percentage: 95 },
-  { skillName: "Javascript2", percentage: 95 },
-  { skillName: "Javascript3", percentage: 95 },
-  { skillName: "Javascript4", percentage: 95 },
-  { skillName: "Javascript5", percentage: 95 },
-  { skillName: "Javascript6", percentage: 95 },
+  { skillName: "Java", percentage: 80 },
+  { skillName: "MySQL", percentage: 90 },
+  { skillName: "MongoDB", percentage: 80 },
+  { skillName: "Javascript", percentage: 45 },
+  { skillName: "ReactJS", percentage: 40 },
+  { skillName: "HTML/CSS", percentage: 40 },
+  { skillName: "C/C++", percentage: 20 },
+  { skillName: "Web Devopment", percentage: 70 },
+  { skillName: "Communication", percentage: 95 },
 ];
 
 const SkillsView = () => {
