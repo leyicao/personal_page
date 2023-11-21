@@ -1,10 +1,14 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 
-import projectImg1 from "../../assets/Project-1.jpg";
-import projectImg2 from "../../assets/Project-2.jpg";
-import projectImg3 from "../../assets/Project-3.jpg";
-import projectImg4 from "../../assets/Project-4.jpg";
+import projectImg1_1 from "../../assets/Projects/Project1-1.png";
+import projectImg1_2 from "../../assets/Projects/Project1-2.png";
+import projectImg1_3 from "../../assets/Projects/Project1-3.png";
+import projectImg1_4 from "../../assets/Projects/Project1-4.png";
+
+import projectImg2 from "../../assets/Projects/Project-2.jpg";
+import projectImg3 from "../../assets/Projects/Project-3.jpg";
+import projectImg4 from "../../assets/Projects/Project-4.jpg";
 
 import PageContainer from "../../Layouts/PageContainer";
 
@@ -12,10 +16,13 @@ import "./Projects.scss";
 import ProjectCard from "./ProjectCard";
 
 const ProjectsContent = [
-  { projectName: "Project 1", imageSrc: projectImg1 },
-  { projectName: "Project 2", imageSrc: projectImg2 },
-  { projectName: "Project 3", imageSrc: projectImg3 },
-  { projectName: "Project 4", imageSrc: projectImg4 },
+  {
+    projectName: "Little Lemon",
+    images: [projectImg1_1, projectImg1_2, projectImg1_3, projectImg1_4],
+  },
+  { projectName: "Project 2", images: [projectImg2] },
+  { projectName: "Project 3", images: [projectImg3] },
+  { projectName: "Project 4", images: [projectImg4] },
 ];
 
 const ProjectsView = () => {
@@ -28,11 +35,11 @@ const ProjectsView = () => {
         </h1>
 
         <div className="projects-container">
-          {ProjectsContent.map(({ projectName, imageSrc }) => (
+          {ProjectsContent.map(({ projectName, images }) => (
             <ProjectCard
               key={projectName}
               projectName={projectName}
-              imageSrc={imageSrc}
+              images={images}
             />
           ))}
         </div>
