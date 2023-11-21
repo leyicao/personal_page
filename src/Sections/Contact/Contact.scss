@@ -1,0 +1,66 @@
+.contact-section {
+  padding: 10% 3vw 0 3vw;
+
+  a {
+    text-decoration: none;
+  }
+
+  .container {
+    max-width: 450px;
+    margin: 100px auto;
+    cursor: pointer;
+
+    .image {
+      transition: all 0.3s ease-in-out 0.1s;
+      text-align: center;
+
+      img {
+        max-width: 50px;
+        object-fit: contain;
+      }
+    }
+
+    .title {
+      margin-top: 15px;
+      text-align: center;
+      font-weight: bold;
+      // color: white;
+      transition: all 0.3s ease-in-out;
+    }
+
+    // box-shadow: rgba(0, 0, 0, 0.5) 20px 20px 30px;
+    transform: scale(1.1);
+
+    .item {
+      &:hover {
+        transform: scale(1.5) translateY(-8px);
+
+        img {
+          animation: bouncing 0.5s 0.3s;
+        }
+
+        .title {
+          letter-spacing: 2px;
+        }
+      }
+    }
+
+    // }
+  }
+}
+
+@keyframes bouncing {
+  from,
+  to {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}

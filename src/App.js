@@ -5,6 +5,7 @@ import HomeView from "./Sections/Home";
 import AboutMeView from "./Sections/AboutMe";
 import SkillsView from "./Sections/Skills";
 import ProjectsView from "./Sections/Projects";
+import ContactView from "./Sections/Contact";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <AboutMeView />
         <SkillsView />
         <ProjectsView />
+        <ContactView />
       </div>
       <ScrollButton />
     </div>
